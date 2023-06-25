@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.container {
+    max-width: 1140px!important;
+}
+:active, :focus{
+    outline: none;
+}
+.login-all, .todo-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-field{
+    height: 650px;
+}
+.register-body, .login-body{
+    position: relative;
+    margin:1rem;
+    padding: 3rem;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #0077c04d;
+    background-color: rgba(255, 255, 255, 0.51);
+}
+.login-input{
+    margin:1rem;
+    max-width: 300px;
+    width: 100%;
+    height: 35px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-radius: 5px;
+    border-color: gray;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.login-button, .todo-button{
+    border-color: #0077c0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 5px;
+    width: 100px;
+    color: #0077c0;
+    font-size: 0.9rem;
+    background-color: white;
+}
+.text-1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0077c0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-2{
+    width: 100%;
+    background-color: #0077c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-radius: 5px;*/
+    height: 40px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom:2rem;
+}
+.text-3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: gray;
+}
+.todo-body{
+    width: 750px;
+    height: 80vh;
+    position: relative;
+}
+.todo-input-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    height: 60px;
+    position: relative;
+}
+.todo-input{
+    width: 80%;
+    height: 35px;
+    margin-right: 1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 0 0 1px 0;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.todo-signout-all{
+    display: flex;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-end;
+}
+.todo-signout{
+    border-color: #d40101;
+    color: #d40101;
+}
+.todo-add{
+    /*height: 35px;*/
+    /*border-color: gray;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-radius: 5px;*/
+    /*line-height: 5px;*/
+    /*width: 100px;*/
+}
+.todo-field-all{
+    max-height: 90%;
+    overflow-y: auto;
+    padding:0 1rem;
+    position: relative;
+}
+.todo-item{
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-color: #80808054;
+    border-width: 0 0 1px 0;
+}
+.todo-content{
+    width: 80%;
+}
+.todo-item-input{
+    width: 100%;
+    height: 35px;
+    margin-right: 1rem;
+    background-color: transparent;
+    border-style: none;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.todo-select{
+    display: flex;
+}
+.todo-delete, .todo-update{
+    width: 50px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border-style: none;
+}
+.todo-delete{
+    background-color: rgba(255, 0, 0, 0.53);
+}
+.todo-update{
+    background-color: rgba(0, 128, 0, 0.47);
+}
+input[type="checkbox"]{
+    appearance: none;
+    height: 40px;
+    width: 50px;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+input[type="checkbox"]:after{
+    font-weight: 900;
+    content: "\2713";
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+input[type="checkbox"]:checked{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+.clock-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 20%;
+    font-family: 'Audiowide', cursive;
+}
+.clock-item{
+    border-style: solid;
+    border-color: #0077c0;
+    width: 250px;
+    color: white;
+    background: #0077c0;
+    text-align: center;
+}
+.modal-all{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 119, 192, 0.55);
+}
+.modal-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+.update-input{
+    width: 90%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 0 0 1px 0;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.modal-button-all{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.modal-button{
+    background-color: white;
+    border-color: #0077c0;
+    border-style: solid;
+    border-width: 1px;
+    color: #0077c0;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+}
+.page404-all{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page404-text{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-all{
+        flex-wrap: wrap;
+    }
+}
